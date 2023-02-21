@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.road{
+    height: 190px;
+    width: 500%;
+    display: block;
+    background-image: url(./road.jpg);
+    position: absolute;
+    background-repeat: repeat-x;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    
+}
+
+
+.city{
+    height: 300px;
+    width: 500%;
+    display: block;
+    background-image: url(./city.png);
+    position: absolute;
+    background-repeat: repeat-x;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+    z-index: 1;
+  
+    
+ 
+}
+
+
+.car{
+  
+    position: absolute;
+    left: -10%;
+   bottom: 92px;
+    width: 400px;
+   z-index: 2;
+   animation: car 4s linear infinite;
+
+}
+.car img{
+    width: 100%;
+}
+
+.wheel{
+position: absolute;
+left: 0;
+z-index: 2;
+
+}
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+ 
+    
+}
+@keyframes car{
+0%{
+left: -10%;
+}
+100%{
+    left: 100%;
+}
+
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.back{
+    position: relative;
+    bottom: 85px;
+   left: -40px;
+   z-index: 2;
+
+}
+.front{
+ position: relative;
+    bottom: 85px;
+    left: 281px;
+    z-index: 2;
+}    
